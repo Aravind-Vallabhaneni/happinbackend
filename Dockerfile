@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM openjdk:17-jdk-slim AS build # This image usually works fine
+FROM openjdk:17-jdk-slim AS build
 
 WORKDIR /app
 
@@ -7,7 +7,7 @@ COPY gradlew .
 COPY gradle ./gradle
 COPY build.gradle.kts .
 COPY settings.gradle.kts .
-COPY libs.versions.toml . # Copy this if you use Gradle's versions catalog
+COPY libs.versions.toml .
 
 COPY src ./src
 
