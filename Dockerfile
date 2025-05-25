@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM openjdk:17-jdk-slim AS build
+FROM openjdk:17-jdk-slim AS build # This image usually works fine
 
 WORKDIR /app
 
@@ -17,8 +17,8 @@ RUN chmod +x ./gradlew
 RUN ./gradlew clean assemble --no-daemon
 
 # Stage 2: Run the application
-# CHANGE THIS LINE: Use 'openjdk:17-jre' which is a standard and available JRE image.
-FROM openjdk:17-jre
+# CHANGE THIS LINE AGAIN: Using 'openjdk:17-slim' for the runtime JRE
+FROM openjdk:17-slim
 
 WORKDIR /app
 
