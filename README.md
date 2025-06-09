@@ -23,7 +23,7 @@ Here's a list of features included in this project:
 
 ## Building & Running
 
-To build or run the project, use one of the following tasks:
+To build or run the project, use one of the following tasks: (Note: Use Prod_main branch for local purposes)
 
 | Task                          | Description                                                          |
 | -------------------------------|---------------------------------------------------------------------- |
